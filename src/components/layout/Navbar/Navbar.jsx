@@ -1,34 +1,59 @@
-import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/logo.png";
+import NavLink from "./NavLink";
+import { Button, Avatar } from "@heroui/react";
+import { ArrowRightFromSquare as LogoutIcon } from "@gravity-ui/icons";
+
+const isLoggedIn = false;
 
 const Navbar = () => {
   return (
     <nav className="border-b">
-      <div className="w-full max-w-11/12 mx-auto min-h-15 flex justify-between items-center">
-        {/* Navbar Right */}
-        <div>
-          <h3 className="font-black text-lg">SunCart</h3>
-        </div>
+      <div className="max-w-7xl mx-auto px-4 min-h-16 flex justify-between items-center">
+        {/* Logo */}
+        <h3 className="text-xl font-bold">
+          <span className="text-blue-500">Sun</span>Cart
+        </h3>
 
-        {/* Navbar Center */}
-        <ul className="flex items-center gap-4">
+        {/* Navigation */}
+        <ul className="flex items-center gap-6 text-sm font-semibold">
           <li>
-            <Link href={"/"}>Home</Link>
+            <NavLink href="/" label={"Home"} />
           </li>
           <li>
-            <Link href={"/products"}>Products</Link>
+            <NavLink href="/products" label={"Products"} />
           </li>
           <li>
-            <Link href={"/profile"}>My Profile</Link>
+            <NavLink href="/profile" label={"My Profile"} />
           </li>
         </ul>
 
-        {/* Navbar Left */}
-        <div className="flex items-center gap-4">
-          <Link href={"/signup"}>SignUp</Link>
-          <Link href={"/signin"}>SignIn</Link>
-        </div>
+        {/* Auth Section */}
+        {isLoggedIn ? (
+          <div className="flex items-center gap-3">
+            <Link href="/profile">
+              <Avatar>
+                <Avatar.Image
+                  alt="User"
+                  src="https://img.heroui.chat/image/avatar?w=400&h=400&u=3"
+                />
+                <Avatar.Fallback>U</Avatar.Fallback>
+              </Avatar>
+            </Link>
+
+            <Button variant="outline">
+              Log out <LogoutIcon />
+            </Button>
+          </div>
+        ) : (
+          <div className="flex items-center gap-2">
+            <Link href="/login">
+              <Button>Login</Button>
+            </Link>
+            <Link href="/register">
+              <Button variant="outline">Register</Button>
+            </Link>
+          </div>
+        )}
       </div>
     </nav>
   );
