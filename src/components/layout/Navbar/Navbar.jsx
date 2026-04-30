@@ -1,19 +1,19 @@
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { Button, Avatar } from "@heroui/react";
-import { ArrowRightFromSquare as LogoutIcon } from "@gravity-ui/icons";
+import { LuLogOut as Logout } from "react-icons/lu";
 
-const isLoggedIn = false;
+const isLoggedIn = true;
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-100/50 border-b shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+    <nav className="bg-amber-50 border-b shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
       {/* Navbar content */}
       <div className="max-w-7xl mx-auto px-4 min-h-16 flex justify-between items-center">
         {/* Logo */}
-        <h3 className="text-xl font-bold tracking-wide text-gray-900">
-          Sun<span className="text-gray-500">Cart</span>
-        </h3>
+        <h2 className="text-xl font-bold tracking-wide text-amber-500">
+          Sun<span className="text-gray-900">Cart</span>
+        </h2>
 
         {/* Navigation */}
         <ul className="flex items-center gap-6 text-sm font-semibold">
@@ -32,17 +32,32 @@ const Navbar = () => {
         {isLoggedIn ? (
           <div className="flex items-center gap-3">
             <Link href="/profile">
-              <Avatar>
+              <Avatar
+                className="group
+                  ring-2 ring-transparent
+                  transition-all duration-300 ease-out
+                  hover:ring-amber-500
+                  group-hover:ring-amber-500
+                  group-hover:scale-110
+                  group-hover:-translate-y-1
+                  group-hover:shadow-lg group-hover:shadow-amber-500/30
+                "
+              >
                 <Avatar.Image
                   alt="User"
                   src="https://img.heroui.chat/image/avatar?w=400&h=400&u=3"
+                  className="transition-transform duration-300 group-hover:scale-105"
                 />
                 <Avatar.Fallback>U</Avatar.Fallback>
               </Avatar>
             </Link>
 
-            <Button variant="outline">
-              Log out <LogoutIcon />
+            <Button
+              variant="outline"
+              className="text-amber-500 border-amber-500 group"
+            >
+              Log out
+              <Logout className="transition-transform duration-300 group-hover:translate-x-1" />
             </Button>
           </div>
         ) : (
