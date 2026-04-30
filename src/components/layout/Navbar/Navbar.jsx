@@ -8,6 +8,7 @@ const isLoggedIn = false;
 const Navbar = () => {
   return (
     <nav className="bg-gray-100/50 border-b shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+      {/* Navbar content */}
       <div className="max-w-7xl mx-auto px-4 min-h-16 flex justify-between items-center">
         {/* Logo */}
         <h3 className="text-xl font-bold tracking-wide text-gray-900">
