@@ -4,30 +4,30 @@ import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer class="bg-gray-900 pt-16 pb-8 px-4 md:px-8">
+    <footer className="bg-gray-900 pt-16 pb-8 px-4 md:px-8">
       {/* Footer Content */}
-      <div class="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Footer top */}
-        <div class="grid min-[1200px]:grid-cols-3 gap-12 xl:gap-16">
-          <div class="min-[1200px]:max-w-md max-w-lg w-full">
+        <div className="grid min-[1200px]:grid-cols-3 gap-12 xl:gap-16">
+          <div className="min-[1200px]:max-w-md max-w-lg w-full">
             {/* Logo */}
             <Link
               href="#"
-              class="min-h-12 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
+              className="min-h-12 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
             >
               <Logo />
             </Link>
 
             {/* Contact Information */}
-            <div class="space-y-3 text-sm text-slate-400 mt-6">
-              <p class="leading-relaxed">
+            <div className="space-y-3 text-sm text-slate-400 mt-6">
+              <p className="leading-relaxed">
                 Address: 123 Market Street, Suite 45, San Francisco
               </p>
               <p>
                 Phone:{" "}
                 <a
                   href="#"
-                  class="hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
+                  className="hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
                 >
                   +8801326878885
                 </a>
@@ -36,7 +36,7 @@ const Footer = () => {
                 Email:{" "}
                 <Link
                   href="#"
-                  class="hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
+                  className="hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
                 >
                   sayedrkhalid.official@gmail.com
                 </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
 
             {/* Social Media Links */}
-            <ul class="flex flex-wrap gap-6 mt-6">
+            <ul className="flex flex-wrap gap-6 mt-6">
               {/* Facebook */}
               <li>
                 <Link
@@ -153,14 +153,14 @@ const Footer = () => {
           </div>
 
           {/* Footer Links */}
-          <div class="min-[1200px]:col-span-2 grid grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 sm:gap-x-8">
-            <div class="space-y-6">
-              <h3 class="text-slate-50 text-sm font-semibold">Services</h3>
-              <ul class="space-y-4 text-sm text-slate-400 font-normal">
+          <div className="min-[1200px]:col-span-2 grid grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 sm:gap-x-8">
+            <div className="space-y-6">
+              <h3 className="text-slate-50 text-sm font-semibold">Services</h3>
+              <ul className="space-y-4 text-sm text-slate-400 font-normal">
                 <li>
                   <a
                     href="#"
-                    class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
                   >
                     Pricing
                   </a>
@@ -168,7 +168,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
                   >
                     Support
                   </a>
@@ -176,7 +176,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
                   >
                     Client Portal
                   </a>
@@ -184,7 +184,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
                   >
                     Resources
                   </a>
@@ -192,13 +192,13 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div class="space-y-6">
-              <h3 class="text-slate-50 text-sm font-semibold">Platforms</h3>
-              <ul class="space-y-4 text-sm text-slate-400 font-normal">
+            <div className="space-y-6">
+              <h3 className="text-slate-50 text-sm font-semibold">Platforms</h3>
+              <ul className="space-y-4 text-sm text-slate-400 font-normal">
                 <li>
                   <a
                     href="#"
-                    class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
                   >
                     Hubspot
                   </a>
@@ -206,7 +206,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
                   >
                     Integration Services
                   </a>
@@ -214,7 +214,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
                   >
                     Marketing Glossar
                   </a>
@@ -222,7 +222,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
                   >
                     UIPath
                   </a>
@@ -230,7 +230,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
                   >
                     Marketo Integration
                   </a>
@@ -238,26 +238,26 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div class="space-y-6 max-lg:col-span-full max-w-md">
+            <div className="space-y-6 max-lg:col-span-full max-w-md">
               <div>
-                <h3 class="text-slate-50 text-sm font-semibold mb-6">
+                <h3 className="text-slate-50 text-sm font-semibold mb-6">
                   Join Our Newsletter
                 </h3>
-                <p class="text-slate-400 text-sm leading-relaxed">
+                <p className="text-slate-400 text-sm leading-relaxed">
                   Subscribe to our newsletter and stay up to date with the
                   latest news and updates.
                 </p>
               </div>
 
-              <div class="bg-neutral-800 flex p-1 focus-within:outline-none focus-within:ring-2 focus-within:ring-amber-500 rounded-md">
+              <div className="bg-neutral-800 flex p-1 focus-within:outline-none focus-within:ring-2 focus-within:ring-amber-500 rounded-md">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  class="text-slate-50 text-sm w-full bg-transparent pl-2 outline-none"
+                  className="text-slate-50 text-sm w-full bg-transparent pl-2 outline-none"
                 />
                 <button
                   type="button"
-                  class="py-2 px-3.5 text-sm rounded-md font-semibold text-nowrap cursor-pointer tracking-wide text-white border border-amber-600 bg-amber-600 hover:bg-amber-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                  className="py-2 px-3.5 text-sm rounded-md font-semibold text-nowrap cursor-pointer tracking-wide text-white border border-amber-600 bg-amber-600 hover:bg-amber-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                 >
                   Submit
                 </button>
@@ -267,15 +267,15 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <hr class="my-8 border-neutral-700" />
+        <hr className="my-8 border-neutral-700" />
 
         {/* Footer bottom */}
-        <div class="flex flex-wrap gap-4 flex-col md:flex-row">
-          <ul class="flex flex-wrap gap-4 text-sm text-slate-400 font-normal">
+        <div className="flex flex-wrap gap-4 flex-col md:flex-row">
+          <ul className="flex flex-wrap gap-4 text-sm text-slate-400 font-normal">
             <li>
               <a
                 href="#"
-                class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
               >
                 Terms of Service
               </a>
@@ -283,7 +283,7 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
               >
                 Privacy Policy
               </a>
@@ -291,14 +291,14 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
               >
                 Security
               </a>
             </li>
           </ul>
 
-          <p class="text-slate-400 text-sm md:ml-auto">
+          <p className="text-slate-400 text-sm md:ml-auto">
             © SunCart. All rights reserved.
           </p>
         </div>
