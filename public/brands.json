@@ -1,0 +1,52 @@
+{
+  "brands": [
+    {
+      "id": 1,
+      "name": "Ray-Ban",
+      "tagline": "Timeless Eyewear Since 1937",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Ray-Ban_logo.svg/1200px-Ray-Ban_logo.svg.png",
+      "category": "Eyewear",
+      "description": "The world's most iconic sunglass brand, known for the Aviator, Wayfarer, and Clubmaster. Ray-Ban blends timeless style with premium UV protection."
+    },
+    {
+      "id": 2,
+      "name": "Neutrogena",
+      "tagline": "The #1 Dermatologist Recommended Brand",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Neutrogena_logo.svg/1200px-Neutrogena_logo.svg.png",
+      "category": "Skincare",
+      "description": "Trusted by dermatologists worldwide, Neutrogena delivers clinically proven skincare and sun protection solutions for every skin type."
+    },
+    {
+      "id": 3,
+      "name": "Oakley",
+      "tagline": "Innovation Beyond the Ordinary",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Oakley_logo.svg/1200px-Oakley_logo.svg.png",
+      "category": "Sports & Eyewear",
+      "description": "Oakley pushes the boundaries of performance eyewear and apparel with cutting-edge optics and bold designs for athletes and outdoor enthusiasts."
+    },
+    {
+      "id": 4,
+      "name": "Havaianas",
+      "tagline": "Born in Brazil. Loved Worldwide.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Havaianas_logo.svg/1200px-Havaianas_logo.svg.png",
+      "category": "Footwear",
+      "description": "Since 1962, Havaianas has been crafting the world's most beloved flip flops from Brazil — colorful, comfortable, and built for summer."
+    },
+    {
+      "id": 5,
+      "name": "YETI",
+      "tagline": "Built for the Wild",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Yeti-logo-master.svg/1200px-Yeti-logo-master.svg.png",
+      "category": "Outdoor & Drinkware",
+      "description": "YETI makes premium coolers, drinkware, and outdoor gear built tough for every summer adventure — from beach days to mountain trails."
+    },
+    {
+      "id": 6,
+      "name": "Speedo",
+      "tagline": "Bring It On",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Speedo_logo.svg/1200px-Speedo_logo.svg.png",
+      "category": "Swimwear",
+      "description": "The global leader in competitive and recreational swimwear since 1914. Speedo's technology-driven designs help swimmers perform their best."
+    }
+  ]
+}

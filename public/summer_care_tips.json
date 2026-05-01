@@ -1,0 +1,52 @@
+{
+  "summerCareTips": [
+    {
+      "id": 1,
+      "title": "Apply Sunscreen Every 2 Hours",
+      "icon": "☀️",
+      "category": "Skincare",
+      "tip": "Use a broad-spectrum SPF 30 or higher sunscreen and reapply every 2 hours, or immediately after swimming or sweating. Don't forget your ears, the back of your neck, and the tops of your feet.",
+      "source": "American Academy of Dermatology"
+    },
+    {
+      "id": 2,
+      "title": "Stay Hydrated All Day",
+      "icon": "💧",
+      "category": "Hydration",
+      "tip": "Drink at least 8–10 glasses of water per day during summer. Add slices of lemon, cucumber, or mint for a refreshing twist. Carry a reusable insulated bottle to keep your drink cold for hours.",
+      "source": "Mayo Clinic"
+    },
+    {
+      "id": 3,
+      "title": "Wear UV-Protective Eyewear",
+      "icon": "🕶️",
+      "category": "Eye Care",
+      "tip": "Choose sunglasses that block 99–100% of UVA and UVB radiation. Wrap-around styles offer the best protection by blocking light from all angles. Never look directly at the sun, even with sunglasses on.",
+      "source": "American Optometric Association"
+    },
+    {
+      "id": 4,
+      "title": "Seek Shade During Peak Hours",
+      "icon": "🌴",
+      "category": "Sun Safety",
+      "tip": "UV radiation is strongest between 10 AM and 4 PM. Use a beach umbrella, find natural shade under trees, or wear a wide-brim hat to significantly reduce your UV exposure during peak hours.",
+      "source": "World Health Organization"
+    },
+    {
+      "id": 5,
+      "title": "Moisturize After Sun Exposure",
+      "icon": "🧴",
+      "category": "Skincare",
+      "tip": "After a day in the sun, apply an aloe vera gel or a hydrating after-sun lotion to soothe and restore your skin. Avoid products with alcohol as they can dry your skin out further.",
+      "source": "Cleveland Clinic"
+    },
+    {
+      "id": 6,
+      "title": "Wear Lightweight, Light-Colored Clothing",
+      "icon": "👕",
+      "category": "Style & Safety",
+      "tip": "Loose-fitting, light-colored clothes in natural fabrics like cotton or linen reflect sunlight and allow airflow. Look for garments with a UPF (Ultraviolet Protection Factor) rating for built-in sun protection.",
+      "source": "Skin Cancer Foundation"
+    }
+  ]
+}

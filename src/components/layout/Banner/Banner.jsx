@@ -92,7 +92,7 @@ const Banner = () => {
                       <Button
                         variant="outline"
                         size="lg"
-                        className="flex items-center gap-2 group text-gray-50 hover:bg-gray-50/10 transition-all duration-300"
+                        className="flex items-center gap-2 group text-gray-50 border-gray-50 hover:bg-gray-50/10 transition-all duration-300"
                       >
                         Explore Products
                         <FaArrowRightLong className="group-hover:translate-x-1 transition-all duration-300" />
