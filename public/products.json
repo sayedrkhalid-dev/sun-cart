@@ -1,0 +1,136 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Ray-Ban Aviator Classic Sunglasses",
+      "brand": "Ray-Ban",
+      "price": 154,
+      "rating": 4.8,
+      "stock": 25,
+      "description": "The iconic Ray-Ban Aviator Classic features crystal lenses and a sleek gold metal frame. With 100% UV protection and polarized lenses, these timeless shades have been a symbol of cool since 1937. Perfect for beach days, road trips, and everyday summer wear.",
+      "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=600&auto=format&fit=crop",
+      "category": "Sunglasses"
+    },
+    {
+      "id": 2,
+      "name": "Neutrogena Ultra Sheer Dry-Touch SPF 100 Sunscreen",
+      "brand": "Neutrogena",
+      "price": 18,
+      "rating": 4.7,
+      "stock": 60,
+      "description": "Neutrogena's Ultra Sheer Dry-Touch Sunscreen offers broad-spectrum SPF 100 protection in a lightweight, non-greasy formula. Dermatologist-recommended and water-resistant for 80 minutes, it's the ultimate summer skincare companion for face and body.",
+      "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&auto=format&fit=crop",
+      "category": "Skincare"
+    },
+    {
+      "id": 3,
+      "name": "Havaianas Brasil Logo Flip Flops",
+      "brand": "Havaianas",
+      "price": 28,
+      "rating": 4.6,
+      "stock": 80,
+      "description": "Brazil's most beloved flip flops, crafted from premium rubber with an embossed texture sole for maximum grip and comfort. Lightweight, water-resistant, and available in vibrant summer colors — the ultimate beach footwear since 1962.",
+      "image": "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=600&auto=format&fit=crop",
+      "category": "Footwear"
+    },
+    {
+      "id": 4,
+      "name": "Speedo Women's Endurance Swimsuit",
+      "brand": "Speedo",
+      "price": 65,
+      "rating": 4.5,
+      "stock": 40,
+      "description": "Built for performance and style, this Speedo Endurance+ one-piece swimsuit offers chlorine resistance, UPF 50+ sun protection, and a secure fit. Whether you're swimming laps or lounging poolside, it delivers comfort that lasts all summer long.",
+      "image": "https://images.unsplash.com/photo-1559563458-527698bf5295?w=600&auto=format&fit=crop",
+      "category": "Swimwear"
+    },
+    {
+      "id": 5,
+      "name": "YETI Rambler 30 oz Travel Tumbler",
+      "brand": "YETI",
+      "price": 38,
+      "rating": 4.9,
+      "stock": 35,
+      "description": "Stay cool all summer with the YETI Rambler 30 oz Tumbler. Double-wall vacuum insulation keeps drinks cold for hours. The durable 18/8 stainless steel construction is puncture- and rust-resistant, and the MagSlider lid keeps your drink covered at the beach or trail.",
+      "image": "https://images.unsplash.com/photo-1610824352934-c10d87b700cc?w=600&auto=format&fit=crop",
+      "category": "Drinkware"
+    },
+    {
+      "id": 6,
+      "name": "Oakley Frogskins Polarized Sunglasses",
+      "brand": "Oakley",
+      "price": 125,
+      "rating": 4.7,
+      "stock": 20,
+      "description": "The Oakley Frogskins combine retro style with high-performance optics. Featuring Plutonite lens material that filters out 100% of all UV rays and Oakley's HDPolarized technology to eliminate glare. Lightweight O-Matter frame for all-day summer comfort.",
+      "image": "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=600&auto=format&fit=crop",
+      "category": "Sunglasses"
+    },
+    {
+      "id": 7,
+      "name": "The North Face Sundowner Hat",
+      "brand": "The North Face",
+      "price": 35,
+      "rating": 4.5,
+      "stock": 50,
+      "description": "Shield yourself from the summer sun with The North Face Sundowner Hat. Built with UPF 40+ fabric, a wide brim for full coverage, and a moisture-wicking sweatband to keep you cool during hikes, beach trips, or outdoor festivals.",
+      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=600&auto=format&fit=crop",
+      "category": "Accessories"
+    },
+    {
+      "id": 8,
+      "name": "Cocosolis Organic Suntan & Body Oil",
+      "brand": "Cocosolis",
+      "price": 32,
+      "rating": 4.6,
+      "stock": 45,
+      "description": "A luxurious blend of 7 certified organic oils including coconut, macadamia, and jojoba. Cocosolis Suntan Oil deeply hydrates skin, accelerates natural tanning, and leaves you with a gorgeous golden glow. 100% natural, paraben-free, and cruelty-free.",
+      "image": "https://images.unsplash.com/photo-1542887800-b9eb37f41d79?w=600&auto=format&fit=crop",
+      "category": "Skincare"
+    },
+    {
+      "id": 9,
+      "name": "Quiksilver Highline Pro 18\" Boardshorts",
+      "brand": "Quiksilver",
+      "price": 60,
+      "rating": 4.4,
+      "stock": 30,
+      "description": "Designed with surfers in mind, the Quiksilver Highline Pro Boardshorts feature 4-way stretch recycled fabric, a quick-dry finish, and a secure waistband. UPF 50+ protection and an ergonomic fit make them perfect for surfing, swimming, and beach volleyball.",
+      "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&auto=format&fit=crop",
+      "category": "Swimwear"
+    },
+    {
+      "id": 10,
+      "name": "Rip Curl Eco Beach Towel",
+      "brand": "Rip Curl",
+      "price": 45,
+      "rating": 4.6,
+      "stock": 55,
+      "description": "Made from 100% recycled cotton, the Rip Curl Eco Beach Towel is ultra-absorbent, sand-resistant, and quick-drying. Generously sized at 160 x 80 cm with bold surf-inspired prints. Soft, durable, and kind to the planet — the perfect beach companion.",
+      "image": "https://images.unsplash.com/photo-1590736704728-f4730bb30770?w=600&auto=format&fit=crop",
+      "category": "Beach Accessories"
+    },
+    {
+      "id": 11,
+      "name": "Herschel Supply Co. Hip Pack",
+      "brand": "Herschel",
+      "price": 40,
+      "rating": 4.5,
+      "stock": 28,
+      "description": "The Herschel Hip Pack is your hands-free summer essential. Crafted from durable recycled polyester with a water-resistant finish, it features a main zip compartment and a front zip pocket for cards and keys. Adjustable webbing waist strap fits any size.",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&auto=format&fit=crop",
+      "category": "Bags"
+    },
+    {
+      "id": 12,
+      "name": "Reef Men's Santa Ana Sandals",
+      "brand": "Reef",
+      "price": 55,
+      "rating": 4.7,
+      "stock": 38,
+      "description": "Reef's Santa Ana Sandals are crafted for all-day comfort with a contoured EVA footbed, anatomical arch support, and a genuine leather upper. The durable rubber outsole provides traction on wet and dry surfaces — ideal for beach-to-street summer adventures.",
+      "image": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=600&auto=format&fit=crop",
+      "category": "Footwear"
+    }
+  ]
+}
