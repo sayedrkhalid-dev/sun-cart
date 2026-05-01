@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import banner from "@/assets/banner.png";
 import { Button } from "@heroui/react";
 import Link from "next/link";
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { BiCart } from "react-icons/bi";
 
