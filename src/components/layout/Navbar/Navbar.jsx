@@ -1,11 +1,16 @@
+"use client";
+
+import { authClient } from "@/lib/auth-client";
+
 import Link from "next/link";
 import NavLink from "./NavLink";
-import { Button, Avatar } from "@heroui/react";
+import { Avatar, Button } from "@heroui/react";
 import { LuLogOut as Logout } from "react-icons/lu";
 
-const isLoggedIn = false;
-
 const Navbar = () => {
+  const { data: session, isPending } = authClient.useSession();
+  const logout = async () => await authClient.signOut();
+
   return (
     <nav className="bg-amber-50 border-b shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
       {/* Navbar content */}
@@ -31,29 +36,38 @@ const Navbar = () => {
         </ul>
 
         {/* Auth Section */}
-        {isLoggedIn ? (
+        {session ? (
           <div className="flex items-center gap-3">
             <Link href="/profile" className="group inline-flex">
               <Avatar
                 className="h-10 w-10 transition-all duration-300 ease-out 
-                     ring-2 ring-transparent group-hover:ring-amber-600 
-                     group-hover:scale-105 
-                     shadow-md group-hover:shadow-xl 
-                     backdrop-blur-xl"
+                         ring-2 ring-transparent group-hover:ring-amber-600 
+                         group-hover:scale-105 
+                         shadow-md group-hover:shadow-xl 
+                         backdrop-blur-xl"
               >
-                <Avatar.Image
-                  alt="User"
-                  src="https://img.heroui.chat/image/avatar?w=400&h=400&u=3"
-                  className="object-cover"
-                />
+                {session.user.image ? (
+                  <Avatar.Image
+                    alt={session.user.name}
+                    src={session.user.image}
+                    className="object-cover"
+                  />
+                ) : (
+                  <Avatar.Fallback className="bg-amber-600 text-white font-semibold">
+                    {session.user.name.slice(0, 2).toUpperCase()}
+                  </Avatar.Fallback>
+                )}
 
-                <Avatar.Fallback className="bg-amber-600 text-white font-semibold">
-                  U
-                </Avatar.Fallback>
+                {isPending && (
+                  <Avatar.Fallback className="bg-amber-600 text-white font-semibold">
+                    {session.user.name.slice(0, 2).toUpperCase()}
+                  </Avatar.Fallback>
+                )}
               </Avatar>
             </Link>
 
             <Button
+              onClick={() => logout()}
               variant="outline"
               className="group text-amber-600 border-amber-600"
             >
