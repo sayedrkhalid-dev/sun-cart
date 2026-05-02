@@ -3,7 +3,7 @@ import NavLink from "./NavLink";
 import { Button, Avatar } from "@heroui/react";
 import { LuLogOut as Logout } from "react-icons/lu";
 
-const isLoggedIn = true;
+const isLoggedIn = false;
 
 const Navbar = () => {
   return (
