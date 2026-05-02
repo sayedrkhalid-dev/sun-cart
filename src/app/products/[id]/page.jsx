@@ -1,6 +1,12 @@
-const ProductDetailPage = async ({ params }) => {
+import ProductDetails from "@/components/ProductDetails/ProductDetails";
+import { fetchProductsData } from "@/lib/dataFetch";
+
+const ProductDetailsPage = async ({ params }) => {
   const { id } = await params;
-  return <div>ProductDetailPage</div>;
+  const { products } = await fetchProductsData();
+  const product = products.find((p) => p.id == id);
+
+  return <ProductDetails product={product} />;
 };
 
-export default ProductDetailPage;
+export default ProductDetailsPage;

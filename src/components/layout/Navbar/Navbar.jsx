@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 min-h-16 flex justify-between items-center">
         {/* Logo */}
         <Link href={"/"}>
-          <h3 className="text-xl font-bold tracking-wide text-amber-500 cursor-pointer">
+          <h3 className="text-xl font-bold tracking-wide text-amber-600 cursor-pointer">
             Sun<span className="text-gray-900">Cart</span>
           </h3>
         </Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
             <Link href="/profile" className="group inline-flex">
               <Avatar
                 className="h-10 w-10 transition-all duration-300 ease-out 
-                     ring-2 ring-transparent group-hover:ring-amber-500 
+                     ring-2 ring-transparent group-hover:ring-amber-600 
                      group-hover:scale-105 
                      shadow-md group-hover:shadow-xl 
                      backdrop-blur-xl"
@@ -47,7 +47,7 @@ const Navbar = () => {
                   className="object-cover"
                 />
 
-                <Avatar.Fallback className="bg-amber-500 text-white font-semibold">
+                <Avatar.Fallback className="bg-amber-600 text-white font-semibold">
                   U
                 </Avatar.Fallback>
               </Avatar>
@@ -55,7 +55,7 @@ const Navbar = () => {
 
             <Button
               variant="outline"
-              className="group text-amber-500 border-amber-500"
+              className="group text-amber-600 border-amber-600"
             >
               Log out
               <Logout className="transition-transform duration-300 ease-out group-hover:translate-x-1" />
@@ -64,12 +64,12 @@ const Navbar = () => {
         ) : (
           <div className="flex items-center gap-2">
             <Link href="/login">
-              <Button className="bg-amber-500">Login</Button>
+              <Button className="bg-amber-600">Login</Button>
             </Link>
             <Link href="/register">
               <Button
                 variant="outline"
-                className="text-amber-500 border-amber-500"
+                className="text-amber-600 border-amber-600"
               >
                 Register
               </Button>

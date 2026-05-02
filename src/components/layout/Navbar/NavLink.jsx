@@ -7,7 +7,7 @@ const NavLink = ({ href, label }) => {
   const pathName = usePathname();
 
   return (
-    <Link href={href} className={`${pathName === href && "text-amber-500"}`}>
+    <Link href={href} className={`${pathName === href && "text-amber-600"}`}>
       {label}
     </Link>
   );

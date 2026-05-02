@@ -13,7 +13,7 @@ const Footer = () => {
             {/* Logo */}
             <Link
               href="#"
-              className="min-h-12 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
+              className="min-h-12 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded"
             >
               <Logo />
             </Link>
@@ -27,7 +27,7 @@ const Footer = () => {
                 Phone:{" "}
                 <a
                   href="#"
-                  className="hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
+                  className="hover:text-amber-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded"
                 >
                   +8801326878885
                 </a>
@@ -36,7 +36,7 @@ const Footer = () => {
                 Email:{" "}
                 <Link
                   href="#"
-                  className="hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
+                  className="hover:text-amber-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded"
                 >
                   sayedrkhalid.official@gmail.com
                 </Link>
@@ -56,15 +56,15 @@ const Footer = () => {
                     bg-gray-800
 
                     shadow-md
-                    hover:shadow-lg hover:shadow-amber-500/30
+                    hover:shadow-lg hover:shadow-amber-600/30
 
                     ring-1 ring-white/5
-                    hover:ring-2 hover:ring-amber-500/60
+                    hover:ring-2 hover:ring-amber-600/60
 
                     transition-all duration-300 ease-out
                     hover:-translate-y-0.5
 
-                    focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500
+                    focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600
                 "
                   aria-label="Facebook"
                 >
@@ -82,15 +82,15 @@ const Footer = () => {
                     bg-gray-800
 
                     shadow-md
-                    hover:shadow-lg hover:shadow-amber-500/30
+                    hover:shadow-lg hover:shadow-amber-600/30
 
                     ring-1 ring-white/5
-                    hover:ring-2 hover:ring-amber-500/60
+                    hover:ring-2 hover:ring-amber-600/60
 
                     transition-all duration-300 ease-out
                     hover:-translate-y-0.5
 
-                    focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500
+                    focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600
                 "
                   aria-label="LinkedIn"
                 >
@@ -108,15 +108,15 @@ const Footer = () => {
                     bg-gray-800
 
                     shadow-md
-                    hover:shadow-lg hover:shadow-amber-500/30
+                    hover:shadow-lg hover:shadow-amber-600/30
 
                     ring-1 ring-white/5
-                    hover:ring-2 hover:ring-amber-500/60
+                    hover:ring-2 hover:ring-amber-600/60
 
                     transition-all duration-300 ease-out
                     hover:-translate-y-0.5
 
-                    focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500
+                    focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600
                 "
                   aria-label="X"
                 >
@@ -134,15 +134,15 @@ const Footer = () => {
                     bg-gray-800
 
                     shadow-md
-                    hover:shadow-lg hover:shadow-amber-500/30
+                    hover:shadow-lg hover:shadow-amber-600/30
 
                     ring-1 ring-white/5
-                    hover:ring-2 hover:ring-amber-500/60
+                    hover:ring-2 hover:ring-amber-600/60
 
                     transition-all duration-300 ease-out
                     hover:-translate-y-0.5
 
-                    focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500
+                    focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600
                 "
                   aria-label="Github"
                 >
@@ -160,7 +160,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded transition-all"
                   >
                     Pricing
                   </a>
@@ -168,7 +168,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded transition-all"
                   >
                     Support
                   </a>
@@ -176,7 +176,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded transition-all"
                   >
                     Client Portal
                   </a>
@@ -184,7 +184,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded transition-all"
                   >
                     Resources
                   </a>
@@ -198,7 +198,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded transition-all"
                   >
                     Hubspot
                   </a>
@@ -206,7 +206,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded transition-all"
                   >
                     Integration Services
                   </a>
@@ -214,7 +214,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded transition-all"
                   >
                     Marketing Glossar
                   </a>
@@ -222,7 +222,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded transition-all"
                   >
                     UIPath
                   </a>
@@ -230,7 +230,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                    className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded transition-all"
                   >
                     Marketo Integration
                   </a>
@@ -249,7 +249,7 @@ const Footer = () => {
                 </p>
               </div>
 
-              <div className="bg-neutral-800 flex p-1 focus-within:outline-none focus-within:ring-2 focus-within:ring-amber-500 rounded-md">
+              <div className="bg-neutral-800 flex p-1 focus-within:outline-none focus-within:ring-2 focus-within:ring-amber-600 rounded-md">
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -257,7 +257,7 @@ const Footer = () => {
                 />
                 <button
                   type="button"
-                  className="py-2 px-3.5 text-sm rounded-md font-semibold text-nowrap cursor-pointer tracking-wide text-white border border-amber-600 bg-amber-600 hover:bg-amber-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                  className="py-2 px-3.5 text-sm rounded-md font-semibold text-nowrap cursor-pointer tracking-wide text-white border border-amber-600 bg-amber-600 hover:bg-amber-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600"
                 >
                   Submit
                 </button>
@@ -275,7 +275,7 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded transition-all"
               >
                 Terms of Service
               </a>
@@ -283,7 +283,7 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded transition-all"
               >
                 Privacy Policy
               </a>
@@ -291,7 +291,7 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded transition-all"
+                className="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded transition-all"
               >
                 Security
               </a>
