@@ -8,17 +8,13 @@ import {
   fetchProductsData,
   fetchTipsData,
 } from "@/lib/dataFetch";
-import Image from "next/image";
 
 export default async function Home() {
   const { products } = await fetchProductsData();
   const { brands } = await fetchBrandsData();
   const { summerCareTips } = await fetchTipsData();
 
-  // Popular Products, Brands, and Summer care tips
   const top_products = products.filter((p) => p.rating >= 4.7).slice(0, 4);
-  // const top_brands = brands.filter((brand) => brand.tag === "popular");
-  // const top_tips = tips.filter((tips) => tips.tag === "popular");
 
   return (
     <>
