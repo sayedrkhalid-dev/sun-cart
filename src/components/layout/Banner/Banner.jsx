@@ -81,7 +81,7 @@ const Banner = () => {
                       <Button
                         variant="primary"
                         size="lg"
-                        className="bg-amber-500 hover:bg-amber-500/90 transition-all duration-300"
+                        className="bg-amber-600 hover:bg-amber-600/90 transition-all duration-300"
                       >
                         <BiCart className="text-2xl" />
                         Shop Now

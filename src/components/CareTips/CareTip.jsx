@@ -10,7 +10,7 @@ const CareTip = ({ tip, index }) => {
   return (
     <div
       className={`[box-shadow:0_2px_10px_-5px_rgba(14,14,14,0.4)] bg-white rounded-md border-l-8 
-                    ${isOpen ? "border-amber-700 dark:border-amber-500" : "border-slate-400 dark:border-neutral-700"} dark:bg-neutral-800`}
+                    ${isOpen ? "border-amber-700 dark:border-amber-600" : "border-slate-400 dark:border-neutral-700"} dark:bg-neutral-800`}
     >
       <h3>
         <button
@@ -19,11 +19,11 @@ const CareTip = ({ tip, index }) => {
           aria-controls={`tip-content-${tip.id}`}
           id={`tip-btn-${tip.id}`}
           onClick={() => setActiveIndex(isOpen ? null : index)}
-          className={`text-base text-left font-medium flex items-center gap-4 p-4 cursor-pointer w-full transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 hover:text-amber-700 
+          className={`text-base text-left font-medium flex items-center gap-4 p-4 cursor-pointer w-full transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 hover:text-amber-700 
                               ${
                                 isOpen
-                                  ? "text-amber-700 dark:text-amber-500 "
-                                  : "text-slate-900 dark:text-slate-50 dark:hover:text-amber-500"
+                                  ? "text-amber-700 dark:text-amber-600 "
+                                  : "text-slate-900 dark:text-slate-50 dark:hover:text-amber-600"
                               }`}
         >
           {tip.icon}

@@ -33,11 +33,11 @@ const ProductCard = ({ product }) => {
             role="img"
             aria-label="4.5 out of 5 stars, based on 50 reviews"
           >
-            <BsStarFill strokeWidth={0.5} className="text-amber-500" />
-            <BsStarFill strokeWidth={0.5} className="text-amber-500" />
-            <BsStarFill strokeWidth={0.5} className="text-amber-500" />
-            <BsStarFill strokeWidth={0.5} className="text-amber-500" />
-            <BsStar strokeWidth={0.5} className="text-amber-500" />
+            <BsStarFill strokeWidth={0.5} className="text-amber-600" />
+            <BsStarFill strokeWidth={0.5} className="text-amber-600" />
+            <BsStarFill strokeWidth={0.5} className="text-amber-600" />
+            <BsStarFill strokeWidth={0.5} className="text-amber-600" />
+            <BsStar strokeWidth={0.5} className="text-amber-600" />
             <span
               aria-hidden="true"
               className="text-gray-900 ml-1.5 text-sm font-medium dark:text-gray-50"
@@ -56,7 +56,7 @@ const ProductCard = ({ product }) => {
 
           {/* Product Details Button */}
           <Link href={`/products/${product.id}`}>
-            <Button variant="primary" className="bg-amber-500 text-gray-50">
+            <Button variant="primary" className="bg-amber-600 text-gray-50">
               View Details
             </Button>
           </Link>
