@@ -3,7 +3,7 @@
 import { authClient } from "@/lib/auth-client";
 import { useForm } from "react-hook-form";
 
-const ResForm = () => {
+const RegForm = () => {
   const {
     register,
     handleSubmit,
@@ -34,7 +34,7 @@ const ResForm = () => {
       {/* Input: Name */}
       <div>
         <label className="mb-2 text-gray-900 font-medium text-sm inline-block dark:text-gray-50">
-          Name
+          Name<span className="text-sm text-red-500">*</span>
         </label>
         <input
           type="text"
@@ -54,7 +54,7 @@ const ResForm = () => {
       {/* Input: Email */}
       <div>
         <label className="mb-2 text-gray-900 font-medium text-sm inline-block dark:text-gray-50">
-          Email
+          Email<span className="text-sm text-red-500">*</span>
         </label>
         <input
           type="email"
@@ -87,7 +87,7 @@ const ResForm = () => {
       {/* Input: Password */}
       <div>
         <label className="mb-2 text-gray-900 font-medium text-sm inline-block dark:text-gray-50">
-          Password
+          Password<span className="text-sm text-red-500">*</span>
         </label>
         <input
           type="password"
@@ -108,50 +108,6 @@ const ResForm = () => {
         )}
       </div>
 
-      {/* Input: Check box for terms and conditions */}
-      {/* <div className="flex items-start flex-wrap gap-2">
-        <label className="flex items-center group has-[input:checked]:text-gray-900">
-          <input
-                       {...register("tmc", {
-              required: "You must accept terms and conditions",
-            })}
-            type="checkbox"
-            required
-            className="sr-only"
-          />
-
-          <span
-            className="flex h-4 w-4 shrink-0 items-center justify-center rounded outline-1 outline-gray-300 dark:outline-gray-600
-                              bg-gray-50 dark:bg-gray-700
-                              peer-[input:checked]:bg-amber-600
-                              peer-[input:checked]:outline-amber-600
-                              group-focus-within:outline-2
-                              group-focus-within:outline-amber-600"
-            aria-he"
-          >
-
-            <svg
-              className="size-3 text-gray-50 opacity-0 peer-[input:checked]:opacity-100"
-              viewBox="0 0 12 10"
-              fill="none"
-              stroke="currentColor"
-              strokeW           >
-              <path d="M1 5l3 3 7-7" />
-            </svg>
-          </span>
-          <span className="ml-3 text-sm text-gray-700 dark:text-gray-300">
-            I accept the
-          </span>
-        </label>
-
-        <Link
-          href="#"
-          className="ml-1 text-sm font-medium text-amber-700 dark:text-amber-500 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
-        >
-          Terms and Conditions
-        </Link>
-      </div> */}
-
       {/* Button: Submit */}
       <button
         type="submit"
@@ -163,4 +119,4 @@ const ResForm = () => {
   );
 };
 
-export default ResForm;
+export default RegForm;

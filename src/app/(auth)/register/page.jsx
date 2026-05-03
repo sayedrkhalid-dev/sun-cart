@@ -1,4 +1,4 @@
-import ResForm from "@/components/ResForm/ResForm";
+import RegForm from "@/components/RegForm/RegForm";
 import Link from "next/link";
 
 const RegisterPage = () => {
@@ -10,7 +10,7 @@ const RegisterPage = () => {
             Create an account
           </h1>
 
-          <ResForm />
+          <RegForm />
 
           <div className="mt-6 text-gray-900 text-sm text-center dark:text-gray-50">
             {"Already have an account?"}
