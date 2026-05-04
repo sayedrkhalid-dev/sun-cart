@@ -56,7 +56,7 @@ const ProductCard = ({ product }) => {
           </span>
 
           {/* Product Details Button */}
-          <ProductDetailsButton />
+          <ProductDetailsButton id={product.id} />
         </div>
       </div>
     </div>

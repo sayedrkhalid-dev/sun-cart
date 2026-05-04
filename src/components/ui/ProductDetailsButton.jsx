@@ -4,13 +4,18 @@ import { authClient } from "@/lib/auth-client";
 import { Button } from "@heroui/react";
 import { useRouter } from "next/navigation";
 
-const ProductDetailsButton = () => {
+const ProductDetailsButton = ({ id }) => {
   const router = useRouter();
 
   const handleDetails = async () => {
     const { data: session } = await authClient.getSession();
 
-    if (!session) router.push("/login");
+    if (!session) {
+      router.push("/login");
+      return;
+    }
+
+    router.push(`/products/${id}`);
   };
 
   return (
