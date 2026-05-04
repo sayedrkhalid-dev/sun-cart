@@ -1,3 +1,4 @@
+import Section from "@/components/layout/Section/Section";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import { fetchProductsData } from "@/lib/dataFetch";
 
@@ -5,7 +6,7 @@ const ProductsPage = async () => {
   const { products } = await fetchProductsData();
 
   return (
-    <section aria-labelledby="products-heading">
+    <Section>
       <div className="mt-8 container mx-auto">
         <h2
           id="products-heading"
@@ -19,7 +20,7 @@ const ProductsPage = async () => {
           ))}
         </ul>
       </div>
-    </section>
+    </Section>
   );
 };
 

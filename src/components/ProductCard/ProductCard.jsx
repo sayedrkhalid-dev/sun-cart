@@ -28,8 +28,9 @@ const ProductCard = ({ product }) => {
       <div className="relative w-full aspect-3/2">
         <Image
           src={product.image}
-          fill
           alt={product.name}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover hover:scale-110 transition-all duration-500"
         />
       </div>
