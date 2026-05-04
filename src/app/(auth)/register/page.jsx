@@ -5,6 +5,7 @@ import RegForm from "@/components/RegForm/RegForm";
 import { Button } from "@heroui/react";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
+import LoginGoogleButton from "@/components/ui/LoginGoogleButton";
 
 const RegisterPage = () => {
   return (
@@ -33,10 +34,7 @@ const RegisterPage = () => {
             </span>
 
             <div>
-              <Button className="w-full border-gray-300" variant="outline">
-                <FcGoogle />
-                Sign up with Google
-              </Button>
+              <LoginGoogleButton />
             </div>
           </div>
         </div>
