@@ -1,17 +1,9 @@
-export const fetchProductsData = async () => {
-  const res = await fetch("http://localhost:3000/products.json");
-  const products = res.json();
-  return products;
-};
+import products from "@/data/products.json";
+import brands from "@/data/brands.json";
+import tips from "@/data/summer_care_tips.json";
 
-export const fetchBrandsData = async () => {
-  const res = await fetch("http://localhost:3000/brands.json");
-  const brands = res.json();
-  return brands;
-};
+export const fetchProductsData = async () => products;
 
-export const fetchTipsData = async () => {
-  const res = await fetch("http://localhost:3000/summer_care_tips.json");
-  const tips = res.json();
-  return tips;
-};
+export const fetchBrandsData = async () => brands;
+
+export const fetchTipsData = async () => tips;
