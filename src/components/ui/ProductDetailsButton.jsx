@@ -2,6 +2,7 @@
 
 import { authClient } from "@/lib/auth-client";
 import { Button } from "@heroui/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const ProductDetailsButton = ({ id }) => {
@@ -19,9 +20,11 @@ const ProductDetailsButton = ({ id }) => {
   };
 
   return (
-    <Button onClick={handleDetails} className="bg-amber-600 text-gray-50">
-      View Details
-    </Button>
+    <Link href={`/products/${id}`}>
+      <Button onClick={handleDetails} className="bg-amber-600 text-gray-50">
+        View Details
+      </Button>
+    </Link>
   );
 };
 
