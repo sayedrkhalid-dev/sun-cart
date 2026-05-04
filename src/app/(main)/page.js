@@ -1,3 +1,6 @@
+import dns from "node:dns";
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
+
 import BrandCard from "@/components/BrandCard/BrandCard";
 import Banner from "@/components/layout/Banner/Banner";
 import Section from "@/components/layout/Section/Section";

@@ -1,3 +1,6 @@
+import dns from "node:dns";
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
+
 import RegForm from "@/components/RegForm/RegForm";
 import { Button } from "@heroui/react";
 import Link from "next/link";
@@ -32,7 +35,7 @@ const RegisterPage = () => {
             <div>
               <Button className="w-full border-gray-300" variant="outline">
                 <FcGoogle />
-                Sign in with Google
+                Sign up with Google
               </Button>
             </div>
           </div>

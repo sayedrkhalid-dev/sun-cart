@@ -1,6 +1,7 @@
+import dns from "node:dns";
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
+
 import LoginForm from "@/components/LoginForm/LoginForm";
-import Image from "next/image";
-import Link from "next/link";
 
 const LoginPage = () => {
   return (
@@ -12,7 +13,9 @@ const LoginPage = () => {
               Sign in
             </h1>
 
-            <LoginForm />
+            <div>
+              <LoginForm />
+            </div>
           </div>
         </div>
       </div>

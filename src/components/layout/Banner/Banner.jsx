@@ -14,7 +14,7 @@ import { BiCart } from "react-icons/bi";
 const slides = [
   {
     id: 1,
-    title: "Summer Sale 50% OFF",
+    title: "Summer Sale 25% OFF",
     subtitle: "Upgrade your style with hot discounts",
     image: banner,
   },
@@ -65,6 +65,7 @@ const Banner = () => {
                 src={slide.image}
                 alt={slide.title}
                 fill
+                sizes=""
                 className="object-cover"
               />
 

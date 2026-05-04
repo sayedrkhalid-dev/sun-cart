@@ -3,6 +3,9 @@
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
+import { FcGoogle } from "react-icons/fc";
+import { Separator } from "@heroui/react";
+import LoginGoogleButton from "../ui/LoginGoogleButton";
 
 export default function LoginForm() {
   const {
@@ -75,41 +78,6 @@ export default function LoginForm() {
         )}
       </div>
 
-      {/* Input: Check box for Remember me */}
-      {/* <div className="flex items-start flex-wrap gap-2">
-        <label className="flex items-center group has-[input:checked]:text-gray-900">
-          <input
-            id="remember"
-            name="remember"
-            type="checkbox"
-            required
-            className="sr-only"
-          />
-          <span
-            className="flex h-4 w-4 shrink-0 items-center justify-center rounded outline-1 outline-gray-300 dark:outline-gray-600
-                                 bg-gray-50 dark:bg-gray-700
-                                 peer-[input:checked]:bg-amber-600
-                                 peer-[input:checked]:outline-amber-600
-                                 group-focus-within:outline-2
-                                 group-focus-within:outline-amber-600"
-            aria-hidden="true"
-          >
-            <svg
-              className="size-3 text-gray-50 opacity-0 peer-[input:checked]:opacity-100"
-              viewBox="0 0 12 10"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M1 5l3 3 7-7" />
-            </svg>
-          </span>
-          <span className="ml-3 text-sm text-gray-700 dark:text-gray-300">
-            Remember me
-          </span>
-        </label>
-      </div> */}
-
       {/* Button: Submit */}
       <button
         type="submit"
@@ -128,6 +96,10 @@ export default function LoginForm() {
           Sign up
         </Link>
       </div>
+
+      <Separator className="mt-4" />
+
+      <LoginGoogleButton />
     </form>
   );
 }

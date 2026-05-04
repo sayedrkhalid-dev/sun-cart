@@ -1,25 +1,36 @@
-import { auth } from "@/lib/auth";
-import { headers } from "next/headers";
-import { redirect } from "next/navigation";
+"use client";
+
+import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 import { Button } from "@heroui/react";
-import { LuLogOut as Logout } from "react-icons/lu";
 import { FiEdit } from "react-icons/fi";
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import { logoutAction } from "@/app/actions/auth";
+import LogoutButton from "@/components/ui/LogoutButton";
 
-export default async function ProfilePage() {
-  const session = await auth.api.getSession({
-    headers: await headers(),
-  });
+export default function ProfilePage() {
+  const { data: session, isPending } = authClient.useSession();
+  const router = useRouter();
 
-  if (!session) {
-    redirect("/login");
+  useEffect(() => {
+    if (!isPending && !session) {
+      router.push("/login");
+    }
+  }, [isPending, session, router]);
+
+  if (isPending) {
+    return (
+      <div className="flex items-center justify-center mt-16">
+        <div className="w-8 h-8 border-4 border-amber-500 border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
   }
 
-  const user = session?.user;
+  if (!session) return null;
+
+  const user = session.user;
 
   const socialClass = `
     flex items-center justify-center
@@ -48,7 +59,6 @@ export default async function ProfilePage() {
 
         <div className="text-center mt-4">
           <h2 className="text-lg font-semibold capitalize">{user.name}</h2>
-
           <p className="text-sm text-gray-500 mt-1">{user.email}</p>
         </div>
 
@@ -57,15 +67,12 @@ export default async function ProfilePage() {
           <Link href="#" className={socialClass}>
             <FaFacebookF className="text-white" />
           </Link>
-
           <Link href="#" className={socialClass}>
             <FaLinkedinIn className="text-white" />
           </Link>
-
           <Link href="#" className={socialClass}>
             <FaTwitter className="text-white" />
           </Link>
-
           <Link href="#" className={socialClass}>
             <FaGithub className="text-white" />
           </Link>
@@ -79,18 +86,7 @@ export default async function ProfilePage() {
             Edit Profile
           </Button>
         </Link>
-
-        <form action={logoutAction} className="w-full">
-          <Button
-            type="submit"
-            variant="outline"
-            fullWidth
-            className="group border-gray-50"
-          >
-            Logout
-            <Logout className="transition-transform duration-300 group-hover:translate-x-1" />
-          </Button>
-        </form>
+        <LogoutButton />
       </div>
     </div>
   );

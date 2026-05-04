@@ -1,7 +1,8 @@
 import { Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
-import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
+import { BsStar, BsStarFill } from "react-icons/bs";
+import ProductDetailsButton from "../ui/ProductDetailsButton";
 
 const ProductCard = ({ product }) => {
   return (
@@ -55,11 +56,7 @@ const ProductCard = ({ product }) => {
           </span>
 
           {/* Product Details Button */}
-          <Link href={`/products/${product.id}`}>
-            <Button variant="primary" className="bg-amber-600 text-gray-50">
-              View Details
-            </Button>
-          </Link>
+          <ProductDetailsButton />
         </div>
       </div>
     </div>

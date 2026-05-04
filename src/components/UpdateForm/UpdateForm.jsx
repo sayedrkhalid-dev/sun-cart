@@ -1,22 +1,22 @@
 "use client";
+
 import { authClient } from "@/lib/auth-client";
 import { Button } from "@heroui/react";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
 const UpdateForm = () => {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm();
 
   const handleUpdate = async (formData) => {
     const { name, url } = formData;
-
     await authClient.updateUser({ name, image: url });
-    console.log(formData);
-    redirect("/profile");
+    router.push("/profile");
   };
 
   return (
@@ -59,6 +59,7 @@ const UpdateForm = () => {
           type="submit"
           variant="primary"
           fullWidth
+          isLoading={isSubmitting}
           className="group bg-amber-500"
         >
           Save Changes
