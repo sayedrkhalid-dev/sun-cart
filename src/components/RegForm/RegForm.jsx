@@ -1,6 +1,7 @@
 "use client";
 
 import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
 const RegForm = () => {
@@ -10,15 +11,16 @@ const RegForm = () => {
     formState: { errors },
   } = useForm();
 
+  const router = useRouter();
+
   const handleRegister = async (formData) => {
     const { name, email, password, url } = formData;
 
     const { data, error } = await authClient.signUp.email({
-      name: name,
-      email: email,
-      password: password,
+      name,
+      email,
+      password,
       image: url,
-      callbackURL: "/",
     });
 
     if (error) {
@@ -26,7 +28,7 @@ const RegForm = () => {
       return;
     }
 
-    console.log(data);
+    router.push("/");
   };
 
   return (
