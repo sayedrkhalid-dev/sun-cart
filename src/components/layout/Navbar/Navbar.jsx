@@ -5,7 +5,7 @@ import NavLink from "./NavLink";
 import { Avatar, Button } from "@heroui/react";
 import { authClient } from "@/lib/auth-client";
 import Logo from "@/components/ui/Logo";
-import LogOutButton from "@/components/ui/LogOutButton";
+import LogoutButton from "@/components/ui/LogoutButton";
 
 const Navbar = () => {
   const { data: session, isPending } = authClient.useSession();
@@ -52,7 +52,7 @@ const Navbar = () => {
                 )}
               </Avatar>
             </Link>
-            <LogOutButton />
+            <LogoutButton />
           </div>
         ) : (
           <div className="flex items-center gap-2">
