@@ -20,7 +20,7 @@ const ProductCard = ({ product }) => {
     router.push(`/products/${product.id}`);
   };
 
-  const rating = product.rating || 4; // fallback rating
+  const rating = product.rating || 4;
 
   return (
     <div className="mt-6 w-full mx-auto bg-gray-50 border border-gray-200 shadow-sm rounded-lg overflow-hidden dark:bg-gray-800 dark:border-gray-700 hover:shadow-[0_4px_20px_rgba(245,158,11,0.2)] transition-all duration-300">
