@@ -25,6 +25,8 @@ export default function LoginForm() {
       console.log(error.message);
       return;
     }
+
+    console.log(data);
   };
 
   return (
