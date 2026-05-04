@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "@heroui/react";
 import { LuLogOut } from "react-icons/lu";
 
-const LogoutButton = () => {
+const LogOutButton = () => {
   const router = useRouter();
 
   const handleLogout = async () => {
@@ -31,4 +31,4 @@ const LogoutButton = () => {
   );
 };
 
-export default LogoutButton;
+export default LogOutButton;
