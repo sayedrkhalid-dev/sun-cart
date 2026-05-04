@@ -4,15 +4,16 @@ import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 pt-16 pb-8 px-4 md:px-8">
+    <footer className="bg-gray-900 pt-16 pb-8 px-4 md:px-8 border-t shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
       {/* Footer Content */}
       <div className="max-w-7xl mx-auto">
         {/* Footer top */}
         <div className="grid min-[1200px]:grid-cols-3 gap-12 xl:gap-16">
           <div className="min-[1200px]:max-w-md max-w-lg w-full">
             {/* Logo */}
+
             <Link
-              href="#"
+              href="/"
               className="min-h-12 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 rounded"
             >
               <Logo />
